@@ -4,3 +4,22 @@ Example for the Cookies & Sessions lecture
 ##License 
 CC-BY-NC-SA 4.0
 http://creativecommons.org/licenses/by-nc-sa/4.0/
+
+##Description
+The platform must contain 4 files:
+1. index.php 
+	- If the user has logged in, redirect him to user_info.php
+	- If the user hasn't logged in, redirect him to login.php
+
+2. login.php
+	- Make an array which contains a list of the users. Every array item has the following properties: username, password (at plaintext), name and last name of the user.
+	- Login form
+	- Validation of the login form's data.
+	- If the user has logged in, redirect him to user_info.php
+
+3. logout.php
+	- Destroy the session.
+
+4. user_info.php
+	- Show the data of the user (username, name and last name).
+	- If the user hasn't logged in, redirect him to the login page.
